@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoc w konkursie</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="naglowek"><h1>LICZNIK POPYTU</h1></div>
+    <div class="block" >
+     podaj popyt roczny: <input class="inputt" type="number" id="numer"><br>
+     podaj mnożnik: <input class="inputt" type="number" id="mnoznik"><br>
+     podaj procent: <input class="inputt" type="number" id="procent"><br>
+     oj byczku +1 <input type="checkbox" id="plusjeden"><br>
+
+        <select name="sel" id="wybor" class="inputt"><br>
+            <optgroup label="-----Wczasy-----">
+                <option value="1">Wczasy w Bułgarii</option>
+                <option value="2">Wczasy w Chorwacji</option>
+                <option value="3">Wczasy w Egipcie</option>
+                <option value="4">Wczasy w Grecji</option>
+                <option value="5">Wczasy w Ruminii</option>
+                <option value="6">Wczasy w Turcji</option>
+            </optgroup>
+            <optgroup label="-----Obozy-----">
+                <option value="7">Krajowy obóz językowy</option>
+                <option value="8">Krajowy obóz jeździecki</option>
+                <option value="9">Krajowy obóz narciarski</option>
+            </optgroup>
+            <optgroup label="-----Wycieczki-----">
+                <option value="10">Krajowa wycieczka nad morze</option>
+                <option value="11">Krajowa wycieczka w góry</option>
+                <option value="12">Wycieczka do stolicy europejskiej</option>
+            </optgroup>
+        </select>
+
+     <br><input type="button" class="butt" value="POLICZ" onclick="popyt()">
+
+     <p id="wynik">Wynik: <b>0</b><br>Liczba roboczogodzin: <b>0</b></p>
+    </div>
+    <div class="block">
+        <h2>Liczba ubezpieczeń</h2>
+        <table>
+            <tr>
+                <th>NNW+KL</th>
+                <th>NNW</th>
+            </tr>
+            <tr>
+                <td id="nnwkl">0</td>
+                <td id="nnw">0</td>
+            </tr>
+        </table>
+        <br><input type="button" class="butt" value="Wyczyść" onclick="wyczysc()">
+    </div>
+
+    <div class="block">
+        <h2>Liczba roboczogodzin</h2>
+        <table>
+            <tr>
+                <th>ZAGRANICZNE</th>
+                <th>KRAJOWE</th>
+            </tr>
+            <tr>
+                <td id="zagraniczne">0</td>
+                <td id="krajowe">0</td>
+            </tr>
+        </table>
+        <br><input type="button" class="butt" value="Wyczyść" onclick="wyczysc()">
+    </div>
+
+    <!--Wczasy-->
+    <div class="naglowek" style="float:left; margin-top:30px;"><h1>WCZASY</h1></div>
+
+    <div class="block" id="bulgaria">
+        <h1>Wczasy w Bułgarii</h1>
+        <p id="bulgariaKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b id="">0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytBulgaria"><br>
+            <input class="butt" type="button" id="bulgButt" onclick="bulgaria()" value="Oblicz">
+
+    </div>
+    <div class="block" id="chorwacja">
+        <h1>Wczasy w Chorwacji</h1>
+        <p id="chorwacjaKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytChorwacja"><br>
+            <input class="butt" type="button" onclick="chorwacja()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="egipt">
+        <h1>Wczasy w Egipcie</h1>
+        <p id="egiptKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytEgipt"><br>
+            <input class="butt" type="button" onclick="egipt()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="grecja">
+        <h1>Wczasy w Grecji</h1>
+        <p id="grecjaKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytGrecja"><br>
+            <input class="butt" type="button" onclick="grecja()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="rumunia">
+        <h1>Wczasy w Rumunii</h1>
+        <p id="rumuniaKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytRumunia"><br>
+            <input class="butt" type="button" onclick="rumunia()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="turcja">
+        <h1>Wczasy w Turcji</h1>
+        <p id="turcjaKalk"> 
+            BILET NA SAMOLOT (OBIE STRONY): <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            REZYDENT: <b>0</b><br>
+            TRANSFER NA LOTNISKO I Z POWROTEM: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytTurcja"><br>
+            <input class="butt" type="button" onclick="turcja()" value="Oblicz">
+
+    </div>
+
+    <!--Obozy-->
+    <div class="naglowek" style="float:left; margin-top:30px;"><h1>OBOZY</h1></div>
+
+    <div class="block" id="jezyk">
+        <h1>Krajowy obóz językowy</h1>
+        <p id="jezykKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            KIEROWNIK OBOZU JĘZYKOWEGO: <b>0</b> <br>
+            NAUCZYCIEL JĘZYKA: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            UBEZPIECZENIE NNW - KRAJOWE: <b>0</b> <br>
+            WYCHOWAWCA - OBÓZ JĘZYKOWY: <b>0</b> <br>
+            
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytJezyk"><br>
+            <input class="butt" type="button" onclick="jezyk()" value="Oblicz">
+
+    </div>
+    <div class="block" id="jazda">
+        <h1>Krajowy obóz jeździecki</h1>
+        <p id="jezdzieckiKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            INSTRUKTOR JEŹDZIECTWA: <b>0</b> <br>
+            KIEROWNIK OBOZU JEŹDZIECKIEGO: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            UBEZPIECZENIE NNW - KRAJOWE: <b>0</b> <br>
+            WYCHOWAWCA - OBÓZ JEŹDZIECKI: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytJezdziecki"><br>
+            <input class="butt" type="button" onclick="jazda()" value="Oblicz">
+
+    </div>
+    <div class="block" id="narty">
+        <h1>Krajowy obóz narciarski</h1>
+        <p id="nartyKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            INSTRUKTOR NARCIARSTWA: <b>0</b><br>
+            KIEROWNIK OBOZU NARCIARSKIEGO: <b>0</b><br>
+            NOCLEG: <b>0</b> <br>
+            UBEZPIECZENIE NNW - KRAJOWE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytNarty"><br>
+            <input class="butt" type="button" onclick="narty()" value="Oblicz">
+
+    </div>
+
+    <!--Obozy-->
+    <div class="naglowek" style="float:left; margin-top:30px;"><h1>WYCIECZKI</h1></div>
+    
+    <div class="block" id="morze">
+        <h1>Krajowa wycieczka nad morze</h1>
+        <p id="morzeKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            BILET WSTĘPU DO OCEANARIUM: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            PILOT: <b>0</b> <br>
+            PRZEWODNIK: <b>0</b> <br>
+            UBEZPIECZENIE NNW - KRAJOWE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytMorze"><br>
+            <input class="butt" type="button" onclick="morze()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="gory">
+        <h1>Krajowa wycieczka w góry</h1>
+        <p id="goryKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            PILOT: <b>0</b> <br>
+            PRZEWODNIK: <b>0</b> <br>
+            UBEZPIECZENIE NNW - KRAJOWE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytGory"><br>
+            <input class="butt" type="button" onclick="gory()" value="Oblicz">
+
+    </div>
+
+    <div class="block" id="stolica">
+        <h1>Wycieczka do stolicy europejskiej</h1>
+        <p id="stoliceKalk"> 
+            AUTOKAR: <b>0</b> <br>
+            BILET WSTĘPU DO MUZEUM: <b>0</b> <br>
+            DOBOWE WYŻYWIENIE: <b>0</b> <br>
+            NOCLEG: <b>0</b> <br>
+            PILOT: <b>0</b> <br>
+            PRZEWODNIK: <b>0</b> <br>
+            UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>0</b> <br>
+        </p>
+            Popyt: <input class="inputt" type="number" id="popytStolice"><br>
+            <input class="butt" type="button" onclick="stolice()" value="Oblicz">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
