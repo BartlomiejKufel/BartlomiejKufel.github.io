@@ -17,17 +17,38 @@ body{
 
 }
 
+h1{
+    line-height: normal;
+}
+
+.row{
+    width:90%; 
+    margin-left:5%; 
+    margin-right:5%;
+}
+
+.short-block{
+    height: 300px;
+}
+
+
 .block{
     border: 2px solid blue;
     border-radius: 20px;
-    width: 30%;
+    width: 28%;
     text-align: center;
     font-size: 88%;
     line-height: 2;
     background-color: lightslategray;
     color: whitesmoke;
     float: left;
-    margin: 10px;
+    margin: 1%;
+    padding: 10px;
+}
+
+.long-block{
+    height: 500px;
+
 }
 
 .butt{
@@ -58,8 +79,8 @@ table{
     border-spacing: 0px;
     width: 50%;
     text-align: center;
-    float: right;
-    margin-right: 25%;
+    margin-left:auto; 
+    margin-right:auto;
 }
 td,th{
     padding: 5px;

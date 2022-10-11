@@ -37,7 +37,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -59,7 +59,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -82,7 +82,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -104,7 +104,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -126,7 +126,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -148,7 +148,7 @@
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
                 "REZYDENT: <b>"+popyt/80+"</b> <br>"+
                 "TRANSFER NA LOTNISKO I Z POWROTEM: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
@@ -170,7 +170,7 @@
                 "KIEROWNIK OBOZU JĘZYKOWEGO: <b>"+popyt/40+"</b> <br>"+
                 "NAUCZYCIEL JĘZYKA: <b>"+popyt/15+"</b> <br>"+
                 "NOCLEG: <b>"+popyt*13+"</b> <br>"+
-                "UBEZPIECZENIE NNW - KRAJOWE: <b>"+popyt+"</b> <br>"+
+                "UBEZPIECZENIE NNW: <b>"+popyt+"</b> <br>"+
                 "WYCHOWAWCA - OBÓZ JĘZYKOWY: <b>"+popyt/15+"</b> <br>";
                 document.getElementById('nnw').innerHTML=nnw;
                 document.getElementById('krajowe').innerHTML=workHoursDomestic;
@@ -194,7 +194,7 @@
                 "INSTRUKTOR NARCIARSTWA: <b>"+popyt/15+"</b><br>"+
                 "KIEROWNIK OBOZU NARCIARSKIEGO: <b>"+popyt/40+"</b><br>"+
                 "NOCLEG: <b>"+popyt*6+"</b> <br>"+
-                "UBEZPIECZENIE NNW - KRAJOWE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnw').innerHTML=nnw;
                 document.getElementById('krajowe').innerHTML=workHoursDomestic;
                 alert("Dodano wartość.");
@@ -216,7 +216,7 @@
                 "INSTRUKTOR JEŹDZIECTWA: <b>"+popyt/15+"</b> <br>"+
                 "KIEROWNIK OBOZU JEŹDZIECKIEGO: <b>"+popyt/40+"</b> <br>"+
                 "NOCLEG: <b>"+popyt*13+"</b> <br>"+
-                "UBEZPIECZENIE NNW - KRAJOWE: <b>"+popyt+"</b> <br>"+
+                "UBEZPIECZENIE NNW: <b>"+popyt+"</b> <br>"+
                 "WYCHOWAWCA - OBÓZ JEŹDZIECKI: <b>"+popyt/15+"</b> <br>";
                 document.getElementById('nnw').innerHTML=nnw;
                 document.getElementById('krajowe').innerHTML=workHoursDomestic;
@@ -240,7 +240,7 @@
                 "NOCLEG: <b>"+popyt*9+"</b> <br>"+
                 "PILOT: <b>"+popyt/40+"</b> <br>"+
                 "PRZEWODNIK: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW - KRAJOWE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnw').innerHTML=nnw;
                 document.getElementById('krajowe').innerHTML=workHoursDomestic;
                 alert("Dodano wartość.");
@@ -262,7 +262,7 @@
                 "NOCLEG: <b>"+popyt*9+"</b> <br>"+
                 "PILOT: <b>"+popyt/40+"</b> <br>"+
                 "PRZEWODNIK: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW - KRAJOWE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnw').innerHTML=nnw;
                 document.getElementById('krajowe').innerHTML=workHoursDomestic;
                 alert("Dodano wartość.");
@@ -285,7 +285,7 @@
                 "NOCLEG: <b>"+popyt*9+"</b> <br>"+
                 "PILOT: <b>"+popyt/40+"</b> <br>"+
                 "PRZEWODNIK: <b>"+popyt/40+"</b> <br>"+
-                "UBEZPIECZENIE NNW + KL - ZAGRANICZNE: <b>"+popyt+"</b> <br>";
+                "UBEZPIECZENIE NNW + KL: <b>"+popyt+"</b> <br>";
                 document.getElementById('nnwkl').innerHTML=nnwkl;
                 document.getElementById('zagraniczne').innerHTML=workHourForeign;
                 alert("Dodano wartość.");
